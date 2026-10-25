@@ -1,0 +1,119 @@
+{
+    "best_model": "Logistic Regression",
+    "models": {
+        "Logistic Regression": {
+            "ROC_AUC": 0.8122,
+            "PR_AUC": 0.5558,
+            "F1_Score": 0.3967,
+            "Precision": 0.6761,
+            "Recall": 0.2807,
+            "Accuracy": 0.819,
+            "Brier_Score": 0.1285
+        },
+        "Random Forest": {
+            "ROC_AUC": 0.8016,
+            "PR_AUC": 0.5423,
+            "F1_Score": 0.2445,
+            "Precision": 0.8133,
+            "Recall": 0.1439,
+            "Accuracy": 0.8115,
+            "Brier_Score": 0.1329
+        },
+        "Gradient Boosting (HistGB)": {
+            "ROC_AUC": 0.8028,
+            "PR_AUC": 0.5577,
+            "F1_Score": 0.4301,
+            "Precision": 0.6432,
+            "Recall": 0.3231,
+            "Accuracy": 0.8185,
+            "Brier_Score": 0.1301
+        }
+    },
+    "top_features": [
+        {
+            "Feature": "Total_Time_Spent_Sec",
+            "Importance_Mean": 0.0746383323556172,
+            "Importance_Std": 0.005387816880030252
+        },
+        {
+            "Feature": "Buyer_Persona",
+            "Importance_Mean": 0.055683049396609396,
+            "Importance_Std": 0.005405746734421366
+        },
+        {
+            "Feature": "Company_Size",
+            "Importance_Mean": 0.029220553287520254,
+            "Importance_Std": 0.0038143923233776886
+        },
+        {
+            "Feature": "Digital_Engagement_Index",
+            "Importance_Mean": 0.023628117218178243,
+            "Importance_Std": 0.0032578175999590808
+        },
+        {
+            "Feature": "Requested_Product_Demo",
+            "Importance_Mean": 0.01942855240158982,
+            "Importance_Std": 0.002457454749929996
+        },
+        {
+            "Feature": "High_Intent_Action_Count",
+            "Importance_Mean": 0.017273399339143694,
+            "Importance_Std": 0.0023243148741035075
+        },
+        {
+            "Feature": "Last_Notable_Activity",
+            "Importance_Mean": 0.013971924085336582,
+            "Importance_Std": 0.0017050684958882256
+        },
+        {
+            "Feature": "Lead_Origin_Channel",
+            "Importance_Mean": 0.010467672517000204,
+            "Importance_Std": 0.0024951715011595115
+        },
+        {
+            "Feature": "Avg_Time_Per_Visit_Sec",
+            "Importance_Mean": 0.007672389797433066,
+            "Importance_Std": 0.002477330263157104
+        },
+        {
+            "Feature": "Pricing_Page_Visited",
+            "Importance_Mean": 0.006120327913992821,
+            "Importance_Std": 0.0020114496507768476
+        },
+        {
+            "Feature": "Email_Open_Rate",
+            "Importance_Mean": 0.002266642622832979,
+            "Importance_Std": 0.0009486818245409916
+        },
+        {
+            "Feature": "Industry_Vertical",
+            "Importance_Mean": 0.002248871635858532,
+            "Importance_Std": 0.0008224463921850588
+        },
+        {
+            "Feature": "Total_Web_Visits",
+            "Importance_Mean": 0.000998916530983468,
+            "Importance_Std": 0.000756742220443687
+        },
+        {
+            "Feature": "Downloaded_Whitepaper",
+            "Importance_Mean": 0.0008503884924814659,
+            "Importance_Std": 0.000394045311677788
+        },
+        {
+            "Feature": "Acquisition_Cost_USD",
+            "Importance_Mean": 0.0005035736519489326,
+            "Importance_Std": 0.0005278286026904902
+        },
+        {
+            "Feature": "Page_Views_Per_Visit",
+            "Importance_Mean": 1.7770986974322e-05,
+            "Importance_Std": 7.929861587461179e-05
+        },
+        {
+            "Feature": "Deal_Value_to_CAC_Ratio",
+            "Importance_Mean": 1.7583923953540248e-05,
+            "Importance_Std": 0.00022305537671790153
+        }
+    ]
+}

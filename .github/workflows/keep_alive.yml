@@ -1,0 +1,21 @@
+name: Streamlit App Keep-Alive Ping
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
+
+jobs:
+  ping-streamlit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Deployed Streamlit Dashboard
+        env:
+          APP_URL: ${{ secrets.STREAMLIT_APP_URL }}
+        run: |
+          if [ -n "$APP_URL" ]; then
+            curl -s -L "$APP_URL" > /dev/null
+            echo "Successfully pinged $APP_URL"
+          else
+            echo "STREAMLIT_APP_URL secret not configured yet; skipping ping."
+          fi
