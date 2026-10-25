@@ -14,8 +14,8 @@ jobs:
           APP_URL: ${{ secrets.STREAMLIT_APP_URL }}
         run: |
           if [ -n "$APP_URL" ]; then
-            curl -s -L "$APP_URL" > /dev/null
-            echo "Successfully pinged $APP_URL"
+            curl -s -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" "$APP_URL" > /dev/null || true
+            echo "Ping sent to $APP_URL to keep it awake!"
           else
             echo "STREAMLIT_APP_URL secret not configured yet; skipping ping."
           fi
